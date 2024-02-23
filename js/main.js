@@ -2,7 +2,7 @@ document.getElementById('button_search').addEventListener('click', getFetch)
 
 
 function getFetch() {
-    url = 'https://ccdb.hemiola.com/characters/strokes/'
+    url = 'http://ccdb.hemiola.com/characters/strokes/'
     input = document.getElementById('search_input').value
     if (isNaN(input)) {
         alert(`Please input a numerical value.`)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	<meta name="description" content="chinese character lookup">
+    	<meta name="keywords" content="chinese kanji character">
+
+
+		<title>Chinese Character Lookup</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="https://kit.fontawesome.com/5489d36d28.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<h1>漢字</h1>
+			<div class="subheader">
+				<h2>Stroke</h2>
+				<h2>Dictionary</h2>
+			</div>
+		</header>
+		<div class="main">
+			<section class="search">
+				<input id="search_input" placeholder="Number of Strokes">
+				<button id="button_search">Get Characters</button>
+			</section>
+			<section class="results">
+				<ul id="result_list">
+				</ul>
+			</section>
+		</div>
+		<footer>
+			Thank you to <a href="http://ccdb.hemiola.com">Hemiola Chinese Character Web API</a>
+		</footer>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -11,7 +11,12 @@ function getFetch() {
     resultList.innerHTML = ''
 
     fetch(url + input)
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) {
+                throw new Error(`HTTP error: ${res.status}`);
+            }
+            return res.json();
+        })
         .then(data => {
             data.forEach( character => {
                 let createLi = document.createElement('li')
